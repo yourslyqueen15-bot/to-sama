@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 A Message For You</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            /* This smoothly repeats your new pink Canva checkered pattern */
+            background-image: url('background.png');
+            background-size: 250px;
+            background-repeat: repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px; /* Spaces out your 4 letter sections perfectly */
+        }
+
+        /* The grey message bubbles exactly matching your Canva design sizes */
+        .card {
+            background-color: #d9d9d9; /* The light grey tone from your images */
+            border-radius: 24px;
+            width: 100%;
+            max-width: 380px; /* Fits beautifully on mobile screens */
+            padding: 35px 24px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            color: #1a1a1a;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        /* Special styling for the very first top "message" header card */
+        .header-card {
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            margin: 0 0 18px 0;
+        }
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Centered layout style matching your reminders list image */
+        .list-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .list-title {
+            font-weight: 500;
+            margin-bottom: 15px !important;
+        }
+        .list-item {
+            margin-bottom: 6px;
+        }
+
+        /* Soft fade-in animation to feel high quality */
+        .fade-in {
+            animation: floatUp 1s ease-out;
+        }
+        @keyframes floatUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BOX 1: HEADER -->
+    <div class="card header-card fade-in">
+        message
+    </div>
+
+    <!-- BOX 2: DEAREST BESTFRIEND MESSAGE -->
+    <div class="card fade-in">
+        <p>my dearest bestfriend</p>
+        <p>you are one of the most wonderful things that has happened to me and i cant imagine my life without you</p>
+        <p>you are so kind and beautiful in every way and i want you to know i will always have your back</p>
+        <p>i will always protect your name and hopefully this friendship will last</p>
+    </div>
+
+    <!-- BOX 3: THINGS THAT REMIND ME OF YOU -->
+    <div class="card fade-in">
+        <p class="list-title">here are some things that remind me of you</p>
+        <div class="list-container">
+            <div class="list-item">1. fluttershy from mlp</div>
+            <div class="list-item">2. dottore</div>
+            <div class="list-item">3. short curly hair</div>
+            <div class="list-item">4. peonies</div>
+            <div class="list-item">5. ragatha from tadc</div>
+            <div class="list-item">6. salad chips</div>
+            <div class="list-item">7. gojo from jjk</div>
+            <div class="list-item">6. strawberry icecream</div>
+            <div class="list-item">7. maldik from our visual novel</div>
+        </div>
+    </div>
+
+    <!-- BOX 4: 2 WONDERFUL YEARS -->
+    <div class="card fade-in">
+        <p>its been 2 wonderful years together i remember the moment we met like it was yesterday oh the wonderful days</p>
+        <p>there isnt anything i would change about you ever and i love every hang out i go to with you from you coming over to watch shows with snacks to hangouts with fatima and the others to even our aimless ones where we enjoy eachothers company</p>
+        <p>or our calls that we play roblox on for hours i couldnt have asked for a better friend so thank you for agreeing to be mine forever hehehehe</p>
+    </div>
+
+    <!-- BOX 5: CLOSING LETTER -->
+    <div class="card fade-in">
+        <p>in the end i want to state that you will never leave ever</p>
+        <p>also this is what i used my months of coding experiance on so be thankful byeee</p>
+    </div>
+
+</body>
+</html>
